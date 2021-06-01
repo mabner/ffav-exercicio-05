@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { MovieComponent } from './components/movie/movie.component';
 import { SearchComponent } from './components/search/search.component';
-
+import { MoviesModule } from './movies/movies.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +14,7 @@ import { SearchComponent } from './components/search/search.component';
     SearchComponent,
     HeaderComponent,
   ],
-  imports: [BrowserModule, FormsModule],
+  imports: [BrowserModule, FormsModule, MoviesModule],
   providers: [],
   bootstrap: [AppComponent],
 })

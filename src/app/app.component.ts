@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'Exercicio 04 - Movies App';
+  title = 'Exercicio 05 - Movies App';
   movies = [
     {
       title: 'Um Sonho de Liberdade',
