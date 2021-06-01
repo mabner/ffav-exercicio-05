@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { IMovieApiResult } from './models/IMovieApiResult';
+import { IMovieApiResult } from '../models/IMovieApiResult';
 
 @Injectable()
 export class MoviesService {
