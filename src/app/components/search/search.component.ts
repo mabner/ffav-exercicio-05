@@ -10,8 +10,8 @@ export class SearchComponent implements OnInit {
   @Output() newFilterEvent = new EventEmitter<string>();
 
   onInputChange(name: string) {
-    this.newFilterEvent.emit(name);
-    console.log(name);
+    const handleString = name.charAt(0).toUpperCase() + name.substr(1);
+    this.newFilterEvent.emit(handleString);
   }
 
   constructor() {}
