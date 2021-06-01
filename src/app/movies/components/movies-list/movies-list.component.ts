@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { IMovieItem } from '../../models/IMovieItem';
 import { MoviesService } from '../../services/movies.service';
 
@@ -8,7 +8,7 @@ import { MoviesService } from '../../services/movies.service';
   styleUrls: ['./movies-list.component.css'],
 })
 export class MoviesListComponent implements OnInit {
-  movies: Array<IMovieItem> = [];
+  @Input() movies: Array<IMovieItem> = [];
   constructor(private moviesService: MoviesService) {}
 
   ngOnInit(): void {
