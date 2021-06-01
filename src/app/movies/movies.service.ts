@@ -9,7 +9,7 @@ export class MoviesService {
   constructor(private http: HttpClient) {}
   getMovies(): Observable<any> {
     return this.http.get(
-      `${this.BASE_URL}/movie/latest?api_key=${this.API_KEY}`
+      `${this.BASE_URL}/movie/popular?api_key=${this.API_KEY}`
     );
   }
 }
